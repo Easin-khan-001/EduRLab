@@ -1,0 +1,175 @@
+ body {
+      font-family: 'Hind Siliguri', sans-serif;
+    }
+    /* Hide scrollbar for all browsers */
+    #carousel {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+      -webkit-overflow-scrolling: touch;
+    }
+    #carousel::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari, Opera */
+    }
+    
+  @media (max-width: 640px) {
+     div > div.flex.flex-col.flex-1.max-w-full.md\:max-w-xl {
+       max-width: 100% !important;
+     }
+     div > div.flex-1.max-w-full.md\:max-w-lg.rounded-xl.overflow-hidden.mt-8.md\:mt-0 img {
+       width: 400px !important;
+       height: 250px !important;
+       max-width: 400px !important;
+       max-height: 250px !important;
+     }
+     div > div.flex.flex-col.md\:flex-row.rounded-xl.p-6.md\:p-8.border.border-transparent.md\:border-gray-300.w-full.max-w-\[1118px\].h-auto.md\:h-\[374px\] {
+       height: auto !important;
+     }
+   }
+
+/* ==============video----------------- */
+
+    .play-button {
+      background: #ef4444; /* Tailwind red-500 */
+      border-radius: 9999px;
+      width: 80px;
+      height: 80px;
+      box-shadow: 0 10px 15px -3px rgba(239, 68, 68, 0.5),
+        0 4px 6px -2px rgba(239, 68, 68, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease,
+        transform 0.2s ease;
+      border: 4px solid white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+    .play-button:hover {
+      background: #dc2626; /* Tailwind red-600 */
+      box-shadow: 0 15px 25px -5px rgba(220, 38, 38, 0.7),
+        0 8px 10px -4px rgba(220, 38, 38, 0.5);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    .play-icon {
+      fill: white;
+      filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.8));
+      transition: filter 0.3s ease;
+    }
+    .play-button:hover .play-icon {
+      filter: drop-shadow(0 0 6px rgba(255, 255, 255, 1));
+    }
+    @media (min-width: 768px) {
+      .play-button {
+        width: 96px;
+        height: 96px;
+      }
+      .play-icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  
+
+/* ================== OMR ====================*/
+
+@keyframes moveLine {
+      0% {
+        top: 0%;
+        opacity: 0.5;
+      }
+      50% {
+        top: 100%;
+        opacity: 0.5;
+      }
+      100% {
+        top: 0%;
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes zoomInOut {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+ 
+
+    @keyframes fadeInOutSecond {
+      0%,
+      45% {
+        opacity: 0;
+      }
+      50%,
+      95% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .line-animation {
+      animation: moveLine 3s linear infinite;
+      background-color: rgba(22, 163, 74, 0.5);
+      height: 30px; /* increased from 6px */
+      /* border-radius: 9999px; */
+      box-shadow: 0 0 12px rgba(22, 163, 74, 0.7);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    
+
+    .line-second {
+      animation-delay: 2s;
+    }
+
+   
+
+    .image-fade-second {
+      animation: fadeInOutSecond 4s ease-in-out infinite;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .zoom-first {
+      animation: zoomInOut 3s ease-in-out infinite;
+      animation-delay: 0s;
+      transform-origin: center center;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .zoom-second {
+      animation: zoomInOut 3s ease-in-out infinite;
+      animation-delay: 2s;
+      transform-origin: center center;
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      user-select: none;
+    }
+

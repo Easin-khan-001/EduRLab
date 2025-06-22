@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind classes show script -->
+     
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="bg-zinc-900 py-4">
+        <div class="max-w-7xl mx-auto ">
+        <div class="flex justify-between items-center">
+            <img src="assets/main logo.png" width="190px" alt="">
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">HOME</a>
+
+                <a href="#" class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">SERVICES</a>
+                <a href="#" class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">BLOG</a>
+                <a href="#" class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">DOWNLOAD</a>
+                <a href="#" class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">CONTACT</a>
+                <a href="#" class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">ABOUT</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="#" class="w-full text-center bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+                    Download App
+                </a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Mobile View -->
+    <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 w-1/2 float-end mt-2 me-2 py-4 rounded-md shadow-lg">
+        <div class="flex flex-col items-center text-white space-y-2 px-4 py-2">
+            <a href="#"
+                class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">HOME</a>
+            <a href="#"
+                class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">SERVICES</a>
+            <a href="#"
+                class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">BLOG</a>
+            <a href="#"
+                class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">DOWNLOAD</a>
+            <a href="#"
+                class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">CONTACT</a>
+            <a href="#"
+                class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">ABOUT</a>
+            <a href="#" class="w-full text-center bg-green-600 px-4 py-2 rounded hover:bg-green-700 transition">Download
+                App</a>
+        </div>
+
+    </div>
+
+    <script src="nav.js"></script>
+</body>
+
+</html>

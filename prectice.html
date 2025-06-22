@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="prectice.css">
+  <title>EduRLab</title>
+</head>
+
+<body>
+  <!-- ======== Navber ========= -->
+
+  <nav class="bg-teal-800 py-4 px-3 lg:px-0 z-[9993] sticky top-0 relative">
+    <div class="max-w-7xl mx-auto ">
+      <div class="flex justify-between items-center">
+        <img src="assets/15Artboard 8xxxhdpi.png" width="190px" alt="">
+        <div class="hidden lg:flex space-x-4">
+          <a href="#"
+            class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">HOME</a>
+          <a href="#"
+            class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">SERVICES</a>
+          <a href="#"
+            class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">BLOG</a>
+          <a href="#"
+            class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">DOWNLOAD</a>
+          <a href="#"
+            class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">CONTACT</a>
+          <a href="#"
+            class="text-white px-3 py-2 border-b-2 border-transparent hover:border-green-500 transition">ABOUT</a>
+        </div>
+
+        <div class="hidden lg:block whitespace-nowrap">
+          <a href="#"
+            class="w-full text-center bg-yellow-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+            Download App
+          </a>
+        </div>
+
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-white">
+            <i class="fa-solid fa-bars menu-icon-i"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile View -->
+    <div id="mobile-menu"
+      class="hidden lg:hidden bg-teal-800 w-1/2 float-end mt-2 me-2 py-4 rounded-md shadow-lg absolute right-0 top-22">
+      <div class="flex flex-col items-center text-white space-y-2 px-4 py-2">
+        <a href="#" class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">HOME</a>
+        <a href="#"
+          class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">SERVICES</a>
+        <a href="#" class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">BLOG</a>
+        <a href="#"
+          class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">DOWNLOAD</a>
+        <a href="#"
+          class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">CONTACT</a>
+        <a href="#"
+          class="w-full text-center px-3 py-2 rounded hover:bg-green-600 hover:text-white transition">ABOUT</a>
+        <a href="#" class="w-full text-center bg-green-600 px-4 py-2 rounded hover:bg-green-700 transition">Download
+          App</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- ===========Header============= -->
+
+  <div class="flex items-center justify-center  md:pt-4 px-1 md:px-0">
+    <div
+      class="flex flex-col-reverse md:flex-row rounded-xl md:p-12 border border-transparent md:border-gray-300 w-full max-w-[1400px] h-auto md:h-[374px]">
+      <div class="flex flex-col flex-1 max-w-full md:max-w-xl px-2.5 md:px-0">
+        <h1 class="text-2xl sm:text-3xl md:text-[38px] hidden md:block font-extrabold text-[#0f172a] leading-tight">
+          একটি মানসম্পন্ন শিক্ষাপ্রতিষ্ঠান গড়ার
+          <span class="text-[#e11d48] ml-2"> গাইডলাইন </span>
+
+          <i class="fas fa-bullseye text-[#e11d48] ml-1 mt-1 inline-block"></i>
+        </h1>
+        <p
+          class="mt-3 font-semibold text-xs sm:text-sm hidden md:block md:text-base text-[#1e293b] max-w-full md:max-w-sm">
+          দক্ষতা উন্নয়নের মাধ্যমে আপনার ভবিষ্যত উন্নত করুন
+        </p>
+        <button
+          class="mt-8 w-full sm:w-48 md:w-56 bg-yellow-400 hover:bg-yellow-500 transition-colors duration-300 rounded-md py-3 font-semibold text-xs sm:text-sm text-[#783f04] flex items-center justify-center gap-2"
+          type="button">
+          <span>পথা শুরু করুন</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <p class="mt-10 text-xs sm:text-[17px] font-semibold text-[#1e293b] max-w-full md:max-w-full">
+          100 + শিক্ষা প্রতিষ্ঠান আমাদের সাথে সংযুক্ত রয়েছেন
+        </p>
+      </div>
+      <div
+        class="flex-1 max-w-full md:max-w-[56%] flex items-center justify-end rounded-xl overflow-hidden mt-1.5 md:mt-0">
+        <img alt="Laptop and mobile phone showing Bangladesh Learns Live website with Bengali text and dark background"
+          class="w-auto h-full rounded-xl object-cover" src="assets/cover-first.png" />
+      </div>
+    </div>
+  </div>
+
+  <section class="w-full bg-white border-l border-gray-300 rounded-tl-md py-12 px-4 sm:py-16 sm:px-8 md:py-20 md:px-16">
+    <div
+      class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-10 md:gap-8 min-h-[200px]">
+      <div class="flex flex-col items-start space-y-4">
+        <h2
+          class="text-4xl sm:text-4xl md:text-5xl font-extrabold leading-snug text-black tracking-wide drop-shadow-sm md:leading-[70px]">
+          <span>EduRLab</span>
+          <span class="block"><span class="text-[#f24a62] font-extrabold">এর সার্ভিস</span>
+            সমূহ</span>
+        </h2>
+      </div>
+
+      <div class="flex flex-wrap justify-start gap-x-8 sm:gap-x-10 gap-y-6 gap-0">
+        <ul class="flex flex-col space-y-3 text-base text-gray-900 min-w-[160px]">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">একাউন্ট তৈরি করা</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">বোর্ড পরীক্ষার প্রশ্ন ও সমাধান</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">টেস্ট পরীক্ষার প্রশ্ন ও সমাধান</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">ভর্তি পরীক্ষার প্রশ্ন</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">মূল বইয়ের প্রশ্ন</span>
+          </li>
+        </ul>
+
+        <ul class="flex flex-col space-y-3 text-base text-gray-900 min-w-[160px]">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">অফলাইন পরীক্ষার প্রশ্ন তৈরীতে ফ্রি ট্রায়াল</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">অনলাইন পরীক্ষা তৈরীতে মাসে ২৫ টি প্রশ্ন</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">সকলের জন্য উন্মুক্ত মডেল টেস্ট</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">প্রশ্ন সার্চ করা</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">প্রশ্ন ফিল্টার করা</span>
+          </li>
+        </ul>
+
+        <ul class="flex flex-col space-y-3 text-base text-gray-900 min-w-[160px]">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">প্র্যাকটিস পরীক্ষা</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">সেলফ টেস্ট</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">আর্কাইভ পরীক্ষা</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-check-circle text-[#5ca839] text-lg"></i>
+            <span class="leading-relaxed font-medium">ভুল সংশোধন পরীক্ষা</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="bg-gray-50 flex items-center justify-center p-4 sm:p-6 md:p-10">
+    <div class="max-w-7xl w-full bg-white rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row">
+      <div class="relative md:w-2/5 pb-[56.25%] md:pb-0 md:h-[500px] md:px-10 md:py-10 rounded-lg overflow-hidden">
+        <img
+          alt="EduRLab software feature video thumbnail showing a laptop screen with educational software interface and icons representing features"
+          class="absolute top-0 left-0 w-full h-full object-cover rounded-lg cursor-pointer select-none" height="500"
+          id="videoThumbnail" src="https://storage.googleapis.com/a1aa/image/c6d4f180-faa4-4248-58c8-de7268b1a5af.jpg"
+          width="889" draggable="false" />
+        <button aria-label="Play EduRLab software feature video" class="play-button" id="playButton" type="button">
+          <svg aria-hidden="true" class="play-icon w-8 h-8 md:w-10 md:h-10" viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg" role="img" focusable="false">
+            <circle cx="32" cy="32" r="32" fill="none" />
+            <path d="M24 18 L48 32 L24 46 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="md:w-3/5 p-6 sm:p-10 md:p-14 flex flex-col justify-center text-left">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 sm:mb-8 text-gray-900"
+          style="line-height: 65px">
+          EduRLab সফটওয়্যার ফিচার ভিডিও
+        </h1>
+        <p class="text-gray-800 text-lg sm:text-xl md:text-2xl leading-relaxed mb-6 sm:mb-8">
+          সফটওয়্যার এর সকল সমস্যার সমাধান পাবেন ভিডিওর এই প্লে লিস্টে।
+          প্রত্যেকটি জিনিস ধরে ধরে বোঝানো হয়েছে। যেন আমাদের সফটওয়্যারটি একজন
+          ব্যবহারকরি অতি সহজেই পরিচালনা করতে পারে
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 py-6">
+    <div class="text-center mb-6">
+      <p class="text-base text-gray-700">OMR Evaluator</p>
+      <h1 class="text-3xl font-extrabold text-gray-700">
+        চোখের পলকে হবে
+        <span class="font-bold text-gray-400"> OMR Evaluation ! </span>
+      </h1>
+      <span class="inline-block mt-1 bg-pink-600 text-white text-sm font-semibold px-3 rounded">
+        Free !
+      </span>
+    </div>
+    <div class="flex flex-col lg:flex-row lg:space-x-8">
+      <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 lg:mb-0">
+        <div class="flex items-center border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full mr-4 relative">
+            <div
+              class="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400 to-green-600 opacity-75 animate-pulse">
+            </div>
+            <i class="fas fa-check text-white text-xl relative z-10 drop-shadow-lg"></i>
+            <div class="absolute top-2 left-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
+            <div class="absolute bottom-2 right-2 w-4 h-4 bg-green-400 rounded-full animate-ping delay-200"></div>
+          </div>
+          <p class="text-gray-700 text-lg leading-tight">
+            রিয়েল-টাইম স্ক্যানিং ও মূল্যায়ন
+          </p>
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full mr-4 relative">
+            <div
+              class="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400 to-green-600 opacity-75 animate-pulse">
+            </div>
+            <i class="fas fa-check text-white text-xl relative z-10 drop-shadow-lg"></i>
+            <div class="absolute -top-2 -left-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
+            <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping delay-200"></div>
+          </div>
+          <p class="text-gray-700 text-lg leading-tight">
+            সঠিকভাবে দাগানো ও ভুল দাগানো সনাক্তকরণ
+          </p>
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full mr-4 relative">
+            <div
+              class="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400 to-green-600 opacity-75 animate-pulse">
+            </div>
+            <i class="fas fa-check text-white text-xl relative z-10 drop-shadow-lg"></i>
+            <div class="absolute -top-2 -left-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
+            <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping delay-200"></div>
+          </div>
+          <p class="text-gray-700 text-lg leading-tight">
+            সঠিক ও ভুল উত্তর বিশ্লেষণ
+          </p>
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full mr-4 relative">
+            <div
+              class="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400 to-green-600 opacity-75 animate-pulse">
+            </div>
+            <i class="fas fa-check text-white text-xl relative z-10 drop-shadow-lg"></i>
+            <div class="absolute -top-2 -left-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
+            <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping delay-200"></div>
+          </div>
+          <p class="text-gray-700 text-lg leading-tight">
+            - Negetive Marking (-০.২৫, -০.৫, -১) সুবিধা
+          </p>
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full mr-4 relative">
+            <div
+              class="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400 to-green-600 opacity-75 animate-pulse">
+            </div>
+            <i class="fas fa-check text-white text-xl relative z-10 drop-shadow-lg"></i>
+            <div class="absolute -top-2 -left-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
+            <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping delay-200"></div>
+          </div>
+          <p class="text-gray-700 text-lg leading-tight">
+            কাউন্টমাইজড OMR এ পরীক্ষা নেয়ার সুযোগ
+          </p>
+        </div>
+        <div class="flex items-center border border-gray-200 rounded-lg p-4">
+          <div class="flex items-center justify-center w-10 h-10 bg-green-100 rounded-full mr-4 relative">
+            <div
+              class="absolute inset-0 rounded-full bg-gradient-to-tr from-green-400 to-green-600 opacity-75 animate-pulse">
+            </div>
+            <i class="fas fa-check text-white text-xl relative z-10 drop-shadow-lg"></i>
+            <div class="absolute -top-2 -left-2 w-4 h-4 bg-green-400 rounded-full animate-ping"></div>
+            <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-green-400 rounded-full animate-ping delay-200"></div>
+          </div>
+          <p class="text-gray-700 text-lg leading-tight">
+            স্কুল, কলেজ ও ইনস্টিটিউটের জন্য উপযোগী
+          </p>
+        </div>
+      </div>
+
+      <div aria-label="OMR sheet scanning animation"
+        class="relative w-[320px] aspect-[8/11] rounded-lg shadow-lg bg-white overflow-hidden select-none w-full md:w-[350px]">
+        <img
+          alt="OMR answer sheet with light gray background and multiple rows and columns of black answer bubbles arranged neatly in a grid, resembling a second exam answer sheet page"
+          class="image-fade-second" draggable="false" height="440" src="assets/omr.png" width="320" />
+        <img
+          alt="OMR answer sheet with light gray background and multiple rows and columns of black answer bubbles arranged neatly in a grid, resembling a second exam answer sheet page"
+          aria-hidden="true" class="zoom-second" draggable="false" height="440" src="assets/omr.png" width="320" />
+        <!-- Scanning lines -->
+        <div aria-hidden="true" class="relative w-full h-full pointer-events-none user-select-none">
+          <div class="line-animation line-second"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <section class="max-w-7xl mx-auto px-6 py-12">
+    <div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center mb-6" style="color: #0a1626">
+        আমাদের
+        <span class="text-[#e60033]">
+          প্রোগ্রামসমূহ
+        </span>
+      </h1>
+      <p
+        class="text-center text-sm sm:text-base md:text-lg max-w-4xl mx-auto mb-14 leading-relaxed text-gray-600 px-2 sm:px-0">
+        IELTS টেস্টে ভালো স্কোর করতে চান কিংবা বিদেশ যাওয়ার সব খুঁটিনাটি জানতে
+        এক্সপার্ট এর গাইডলাইন পেতে চান? অথবা আপনার সন্তানকে English এ কথা বলা
+        শিখাতে চান? আমরা আপনার জন্য নিয়ে এসেছি বেস্ট সলিউশন। আমাদের প্রোগ্রাম গুলো
+        দেখে নিন এবং আপনার শেখার যাত্রা শুরু করুন আমাদের সাথে।
+      </p>
+      <!-- IELTS Programme Card -->
+      <div
+        class="bg-gradient-to-r from-[#0a0a14] to-[#1a1a2e] rounded-3xl p-6 sm:p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 shadow-2xl">
+        <div class="flex-1 text-white">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 sm:mb-8 drop-shadow-lg">
+            IELTS Programme
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 text-xs sm:text-sm md:text-base leading-relaxed">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-gray-400 mt-1">
+                </i>
+                <span class="text-gray-300 font-medium">
+                  এক্সপার্ট টিচারদের সাথে 1 to 1 Speaking Mock Test &amp; Feedback
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-gray-400 mt-1">
+                </i>
+                <span class="text-gray-300 font-medium">
+                  Grammar, Pronunciation &amp; Study Abroad নিয়ে Workshop
+                </span>
+              </li>
+            </ul>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-gray-400 mt-1">
+                </i>
+                <span class="text-gray-300 font-medium">
+                  IELTS পরীক্ষার আগামতুর্বে Intensive Care &amp; Support
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-gray-400 mt-1">
+                </i>
+                <span class="text-gray-300 font-medium">
+                  অত্যাধুনিক Computer Lab-এ বিশাল অনলাইন কন্টেন্ট লাইব্রেরি
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-5">
+            <button
+              class="bg-[#e60033] hover:bg-[#b30029] transition rounded-full px-7 py-3 font-semibold shadow-lg shadow-[#e60033]/50 min-w-[140px] text-sm sm:text-base">
+              ফ্রি ক্লাস বুক করুন
+            </button>
+            <button
+              class="bg-white text-[#0a1626] hover:bg-gray-100 transition rounded-full px-7 py-3 font-semibold shadow-md min-w-[140px] text-sm sm:text-base">
+              আরো বিস্তারিত জানুন
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[320px] md:w-[360px] rounded-3xl overflow-hidden shadow-lg ring-4 ring-[#e60033]/40">
+          <img
+            alt="Two graduates in black graduation gowns and caps with famous landmarks like Statue of Liberty, Colosseum, and Tower Bridge in the background, with IELTS Programme text in red"
+            class="w-full h-auto object-cover" height="220"
+            src="https://storage.googleapis.com/a1aa/image/238b5e9d-ef1f-4600-f443-e61032734a70.jpg" width="360" />
+        </div>
+      </div>
+      <!-- Spoken English (Junior) Card -->
+      <div
+        class="bg-gradient-to-r from-[#7a001a] to-[#a3002a] rounded-3xl p-6 sm:p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 md:gap-12 shadow-2xl mt-12">
+        <div class="flex-1 text-white">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 sm:mb-8 drop-shadow-lg">
+            Spoken English (Junior)
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 text-xs sm:text-sm md:text-base leading-relaxed">
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#e60033] mt-1">
+                </i>
+                <span class="font-medium">
+                  Game ও অ্যাক্টিভিটির মাধ্যমে সহজে ইংরেজি শেখা
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#e60033] mt-1">
+                </i>
+                <span class="font-medium">
+                  Poster Presentation, Grammar ও Writing ওয়ার্কশপ
+                </span>
+              </li>
+            </ul>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#e60033] mt-1">
+                </i>
+                <span class="font-medium">
+                  পার্সোনাল Consultation ও Speaking সাপোর্ট
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#e60033] mt-1">
+                </i>
+                <span class="font-medium">
+                  Parents মিটিং ও Progress রিপোর্ট
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-5">
+            <button
+              class="bg-[#e60033] hover:bg-[#b30029] transition rounded-full px-7 py-3 font-semibold shadow-lg shadow-[#e60033]/50 min-w-[140px] text-sm sm:text-base">
+              ফ্রি ক্লাস বুক করুন
+            </button>
+            <button
+              class="bg-white text-[#7a001a] hover:bg-gray-100 transition rounded-full px-7 py-3 font-semibold shadow-md min-w-[140px] text-sm sm:text-base">
+              আরো বিস্তারিত জানুন
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex-shrink-0 w-full sm:w-[320px] md:w-[360px] rounded-3xl overflow-hidden shadow-lg ring-4 ring-[#e60033]/40">
+          <img
+            alt="Two children wearing black and red superhero capes with famous landmarks like Big Ben and Sydney Opera House in the background, with Spoken English Junior text"
+            class="w-full h-auto object-cover" height="220"
+            src="https://storage.googleapis.com/a1aa/image/6346f8ce-e567-42a9-b536-dc310af4c61c.jpg" width="360" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="max-w-[90rem] mx-auto px-6 sm:px-10 lg:px-16 py-12 relative">
+    <h2 class="text-center text-xl sm:text-2xl md:text-3xl font-semibold leading-tight text-gray-900 mb-12">
+      কেন আমরাই শিক্ষার্থী ও <br />
+      অভিভাবকগণের প্রথম পছন্দ?
+    </h2>
+    <div class="max-w-[85rem] mx-auto flex items-center relative">
+      <!-- Left arrow outside -->
+      <button aria-label="Previous" id="prevBtn"
+        class="text-gray-400 hover:text-gray-600 focus:outline-none absolute md:-left-12 -left-1 top-1/2 -translate-y-1/2 z-20 p-2 bg-white rounded-full shadow">
+        <i class="fas fa-chevron-left text-lg"></i>
+      </button>
+
+      <!-- Cards container -->
+      <div id="carousel" class="flex space-x-6 overflow-x-auto scroll-smooth snap-x snap-mandatory w-full px-8">
+        <!-- Card 1 -->
+        <div
+          class="snap-center flex-shrink-0 w-[90vw] sm:w-[30vw] md:w-[30vw] max-w-xs border border-gray-200 rounded-lg p-6 relative bg-white pt-6">
+          <div class="absolute -top-3 left-6 flex items-center justify-center z-10">
+            <i class="fas fa-quote-left text-[#FF6B6B] text-lg"></i>
+          </div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-6 relative z-20">
+            কোর্সটির প্রতি সেকশনে ছিল স্পষ্ট নির্দেশনা । বিশেষ করে, “Reading” এবং “Writing” সেকশন এটাই informative ছিল
+            যা আমার জন্য Mock Test এবং Real Exam এ সাহায্য করে তুলেছিল। আমার সবচেয়ে ভালো লেগেছে “Writing Part”।
+          </p>
+          <p class="font-semibold text-gray-900 text-sm relative z-20">Tahiya Faiza</p>
+          <p class="text-gray-400 text-xs mt-1 relative z-20">Teaching Assistant, Brac University</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="snap-center flex-shrink-0 w-[90vw] sm:w-[30vw] md:w-[30vw] max-w-xs border border-gray-200 rounded-lg p-6 relative bg-white pt-6">
+          <div class="absolute -top-3 left-6 flex items-center justify-center z-10">
+            <i class="fas fa-quote-left text-[#FF6B6B] text-lg"></i>
+          </div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-6 relative z-20">
+            অফলাইনে শেখার মত সময় হয়ে উঠছিল না তাই অনলাইন কোর্স কে বেছে নেওয়া । কোর্সটিতে খুব সুন্দর করে হয়রন
+            তাত্ত্বিক মাস পড়ানো হয়েছে । খুব সহজেই প্রতিদিন প্র্যাকটিস করে খুব দ্রুত গুছড তেলাওয়াত আয়ত্ত করতে পেরেছি।
+          </p>
+          <p class="font-semibold text-gray-900 text-sm relative z-20">Zakirul Islam</p>
+          <p class="text-gray-400 text-xs mt-1 relative z-20">Businessman</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="snap-center flex-shrink-0 w-[90vw] sm:w-[30vw] md:w-[30vw] max-w-xs border border-gray-200 rounded-lg p-6 relative bg-white pt-6">
+          <div class="absolute -top-3 left-6 flex items-center justify-center z-10">
+            <i class="fas fa-quote-left text-[#FF6B6B] text-lg"></i>
+          </div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-6 relative z-20">
+            আমার একটি অনলাইন পেজ ছিল কিন্তু পেইজটিকে নিয়ে কিভাবে সামনে আগাতে কোন কিছু বুঝতে পারছিলাম না । কোর্সটি করার
+            মাধ্যমে কিভাবে একটি বেসিক পোস্ট দিবো কিভাবে ইউজ করব কিভাবে কন্টেন্ট করবো শিখতে পেরেছি।
+          </p>
+          <p class="font-semibold text-gray-900 text-sm relative z-20">Hasibur Rahman</p>
+          <p class="text-gray-400 text-xs mt-1 relative z-20">Online Business Owner</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="snap-center flex-shrink-0 w-[90vw] sm:w-[30vw] md:w-[30vw] max-w-xs border border-gray-200 rounded-lg p-6 relative bg-white pt-6">
+          <div class="absolute -top-3 left-6 flex items-center justify-center z-10">
+            <i class="fas fa-quote-left text-[#FF6B6B] text-lg"></i>
+          </div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-6 relative z-20">
+            কোর্সের মাধ্যমে আমি অনেক কিছু শিখেছি যা আমার কাজের দক্ষতা বাড়িয়েছে এবং আত্মবিশ্বাস দিয়েছে। অনলাইন কোর্স
+            হওয়ায় সময়ের কোনো বাধা ছিল না।
+          </p>
+          <p class="font-semibold text-gray-900 text-sm relative z-20">Rina Akter</p>
+          <p class="text-gray-400 text-xs mt-1 relative z-20">Freelancer</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="snap-center flex-shrink-0 w-[90vw] sm:w-[30vw] md:w-[30vw] max-w-xs border border-gray-200 rounded-lg p-6 relative bg-white pt-6">
+          <div class="absolute -top-3 left-6 flex items-center justify-center z-10">
+            <i class="fas fa-quote-left text-[#FF6B6B] text-lg"></i>
+          </div>
+          <p class="text-gray-700 text-sm leading-relaxed mb-6 relative z-20">
+            অনলাইন কোর্সের মাধ্যমে আমি নিজের সময় মতো পড়াশোনা করতে পেরেছি এবং প্রয়োজনীয় সব তথ্য পেয়েছি যা আমার জন্য
+            খুবই উপকারী হয়েছে।
+          </p>
+          <p class="font-semibold text-gray-900 text-sm relative z-20">Sabbir Hossain</p>
+          <p class="text-gray-400 text-xs mt-1 relative z-20">Student</p>
+        </div>
+      </div>
+
+      <!-- Right arrow outside -->
+      <button aria-label="Next" id="nextBtn"
+        class="text-gray-400 hover:text-gray-600 focus:outline-none absolute md:-right-12 -right-1 top-1/2 -translate-y-1/2 z-20 p-2 bg-white rounded-full shadow">
+        <i class="fas fa-chevron-right text-lg"></i>
+      </button>
+    </div>
+  </section>
+
+
+
+
+
+  <section class="bg-gradient-to-b from-[#5a0a23] to-[#7a1a3a] py-12 px-2 sm:px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-white text-3xl md:text-4xl font-extrabold mb-1 leading-tight"
+        style="font-weight: 800; font-family: 'Hind Siliguri', sans-serif;">
+        ২০২২-২৪ শিক্ষাবর্ষে টেন মিনিট স্কুলের এডমিশন সফল্য
+      </h1>
+      <p class="text-white text-sm md:text-base font-semibold mb-10"
+        style="font-weight: 600; font-family: 'Hind Siliguri', sans-serif;">
+        তোমাদের সফলটাই আমাদের অনুপ্রেরণা
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-6">
+        <div class="bg-[#3f0f22cc] rounded-lg px-10 py-8 w-full sm:w-64">
+          <h2 class="text-white text-4xl font-extrabold mb-2"
+            style="font-weight: 800; font-family: 'Hind Siliguri', sans-serif;">
+            ১৫,৫৪৮
+          </h2>
+          <p class="text-white text-xs font-semibold"
+            style="font-weight: 600; font-family: 'Hind Siliguri', sans-serif;">
+            মোট শিক্ষার্থী
+          </p>
+        </div>
+        <div class="bg-[#3f0f22cc] rounded-lg px-10 py-8 w-full sm:w-64">
+          <h2 class="text-white text-4xl font-extrabold mb-2"
+            style="font-weight: 800; font-family: 'Hind Siliguri', sans-serif;">
+            ১,৪০০+
+          </h2>
+          <p class="text-white text-xs font-semibold"
+            style="font-weight: 600; font-family: 'Hind Siliguri', sans-serif;">
+            চালুপ্রাপ্ত শিক্ষার্থী
+          </p>
+        </div>
+        <div class="bg-[#3f0f22cc] rounded-lg px-10 py-8 w-full sm:w-64">
+          <h2 class="text-white text-4xl font-extrabold mb-2"
+            style="font-weight: 800; font-family: 'Hind Siliguri', sans-serif;">
+            ৩৪
+          </h2>
+          <p class="text-white text-xs font-semibold"
+            style="font-weight: 600; font-family: 'Hind Siliguri', sans-serif;">
+            টপ ১০০-তে চালুপ্রাপ্ত শিক্ষার্থী
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-10 sm:py-12 md:py-16">
+    <h2 class="text-center text-2xl sm:text-3xl md:text-4xl font-extrabold mb-10 sm:mb-14 md:mb-16 tracking-tight">
+      <span class="font-extrabold">কোন </span>
+      <span class="underline-red">জিজ্ঞাসা ?</span>
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-10 sm:gap-x-16 max-w-6xl mx-auto">
+      <div class="space-y-6 sm:space-y-8">
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq1"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlab-তে জয়েন করতে কি টাকা লাগে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq1"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            EduRlab-তে যোগদানের জন্য নির্দিষ্ট ফি আছে যা আপনার সুবিধামত
+            প্যাকেজ অনুযায়ী প্রদান করতে হবে।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq2"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlab-তে কি কি সার্ভিস আছে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq2"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            EduRlab-তে বিভিন্ন শিক্ষামূলক সার্ভিস যেমন MCQ, CQ, মডেল টেস্ট,
+            ভর্তি প্রস্তুতি ইত্যাদি পাওয়া যায়।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq3"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlab-তে MCQ বা CQ প্রশ্নের সমাধান আছে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq3"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            হ্যাঁ, EduRlab-তে MCQ এবং CQ উভয় ধরনের প্রশ্নের সমাধান পাওয়া
+            যায়।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq4"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlabয় পরীক্ষা দেওয়া বা নেওয়া যাবে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq4"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            EduRlabয় আপনি পরীক্ষা দিতে এবং নিতে পারবেন, যা আপনার প্রস্তুতিতে
+            সহায়ক হবে।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq5"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>প্রশ্ন কিভাবে তৈরি করবো?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq5"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            আপনি EduRlabর ইন্টারফেস ব্যবহার করে সহজেই প্রশ্ন তৈরি করতে পারবেন।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq6"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>বর্তমানে কোনো অফার আছে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq6"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            হ্যাঁ, বিভিন্ন সময়ে EduRlab বিভিন্ন আকর্ষণীয় অফার প্রদান করে
+            থাকে।
+          </div>
+        </div>
+      </div>
+      <div class="space-y-6 sm:space-y-8">
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq8"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlab শিক্ষক না শিক্ষার্থীদের জন্য?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq8"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            EduRlab মূলত শিক্ষার্থীদের জন্য, তবে শিক্ষকগণও এটি ব্যবহার করতে
+            পারেন।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq9"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlab কোন বিভাগের শিক্ষার্থীরা ব্যবহার করতে পারবে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq9"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            EduRlab সকল বিভাগের শিক্ষার্থীদের জন্য উপযোগী।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq10"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlab ব্যবহার করে ভর্তি প্রস্তুতি নেওয়া যাবে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq10"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            হ্যাঁ, EduRlab ব্যবহার করে ভর্তি পরীক্ষার প্রস্তুতি নেওয়া যায়।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq11"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>EduRlab-তে মডেল টেস্ট দেওয়া যাবে?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq11"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            EduRlab-তে নিয়মিত মডেল টেস্ট দেওয়া যায়।
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq12"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>প্রশ্ন তৈরীতে খরচ কত?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq12"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            প্রশ্ন তৈরীর জন্য নির্দিষ্ট একটি খরচ প্রযোজ্য যা প্যাকেজ অনুযায়ী
+            পরিবর্তিত হতে পারে।
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+          <button aria-expanded="false" aria-controls="faq14"
+            class="w-full flex items-center justify-between px-5 sm:px-6 md:px-8 py-4 sm:py-5 text-base sm:text-lg md:text-xl font-medium leading-6 sm:leading-7 hover:bg-gray-50 transition-colors duration-200 focus:outline-none"
+            onclick="toggleFaq(event)">
+            <span>আমি নতুন একাউন্ট তৈরি করতে পারছি না বা লগ-ইন করতে পারছি না, কি
+              করবো?</span>
+            <span
+              class="flex items-center justify-center w-9 h-9 rounded-full bg-red-100 text-red-600 font-extrabold text-2xl leading-none select-none transition-transform duration-300">+</span>
+          </button>
+          <div id="faq14"
+            class="px-5 sm:px-6 md:px-8 pb-5 sm:pb-6 md:pb-8 text-gray-700 text-sm sm:text-base md:text-lg hidden">
+            লগ-ইন বা একাউন্ট তৈরিতে সমস্যা হলে আমাদের সাপোর্ট টিমের সাথে
+            যোগাযোগ করুন।
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto p-4 sm:p-6 md:p-8">
+    <div class="flex flex-col md:flex-row items-center md:items-start bg-[#f3f5f9] rounded-[20px] overflow-hidden"
+      style="border-radius: 20px 20px 20px 20px">
+      <div class="flex-shrink-0 p-4 md:p-1 rounded-[20px] bg-[#f9e6a7]">
+        <img
+          alt="Mobile phone screen showing EduRLab app interface with Bengali text and Google Play button on yellow background with rounded corners"
+          class="w-[442px] h-auto rounded-[20px]" height="320" src="assets/download.png" width="320" />
+      </div>
+      <div class="md:p-14 p-5 w-full flex-1 flex h-full justify-center flex-col items-center">
+        <h2 class="text-[#0a2540] font-semibold text-xl md:text-2xl leading-tight mb-2">
+          Download EduRLab App
+        </h2>
+        <p class="text-[#0a2540] text-center text-sm md:text-base mb-6">
+          Get the best experience of live classes, Download EduRLab App now
+        </p>
+        <div class="flex flex-col sm:flex-row sm:space-x-6 space-y-6 sm:space-y-0 max-w-md w-full">
+          <button
+            class="flex-1 bg-[#e6e9f0] text-[#0a2540] font-semibold text-lg rounded-md py-4 flex items-center justify-center gap-3 hover:bg-[#d7dbe6] transition"
+            type="button">
+            <!--  -->
+            ANDROID
+          </button>
+          <button
+            class="flex-1 bg-[#e6e9f0] text-[#0a2540] font-semibold text-lg rounded-md py-4 flex items-center justify-center gap-3 hover:bg-[#d7dbe6] transition"
+            type="button">
+            iOS / macOS
+          </button>
+        </div>
+        <button
+          class="mt-6 w-full max-w-md bg-[#e6e9f0] text-[#0a2540] font-semibold text-xl rounded-md py-5 flex items-center justify-center gap-3 hover:bg-[#d7dbe6] transition"
+          type="button">
+          WINDOWS
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <footer class="bg-teal-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid md:grid-cols-5 sm:grid-cols-2 gap-10 grid-cols-2">
+
+        <!-- Logo & Description -->
+        <div class="md:col-span-2">
+          <img src="assets/white_logo.png" alt=""  class="mb-5 max-w-48">
+          <p class="text-sm leading-relaxed text-gray-400 mb-6">
+            EduRLab হলো একটি স্মার্ট শিক্ষা প্রযুক্তি প্ল্যাটফর্ম, যা স্কুল, কলেজ এবং কোচিং সেন্টার পরিচালনা সহজ করে
+            তোলে।
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-xl hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-xl hover:text-white transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-xl hover:text-white transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-xl hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Links: Company -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">Company</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white transition">About Us</a></li>
+            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+            <li><a href="#" class="hover:text-white transition">Careers</a></li>
+            <li><a href="#" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Links: Support -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">Support</h3>
+          <ul class="space-y-3 text-sm">
+            <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+            <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+            <li><a href="#" class="hover:text-white transition">Terms</a></li>
+            <li><a href="#" class="hover:text-white transition">Privacy</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h3 class="text-white text-lg font-semibold mb-4">Newsletter</h3>
+          <p class="text-sm text-gray-400 mb-4">নতুন আপডেট পেতে ইমেইল দিন:</p>
+          <form class="flex flex-col space-y-3">
+            <input type="email" placeholder="Enter your email"
+              class="px-4 py-2 rounded-md bg-gray-800 text-gray-100 border border-gray-700 focus:ring-2 focus:ring-green-500 focus:outline-none">
+            <button type="submit"
+              class="bg-yellow-600 hover:bg-yellow-700 text-white py-2 rounded-md font-medium transition">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-100">
+        &copy; 2025 EduRLab — All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="prectice.js"></script>
+</body>
+
+</html>

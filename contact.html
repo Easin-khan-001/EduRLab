@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!-- Font Awesome CDN (Head এর মধ্যে যোগ করতে হবে) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>EduRLab</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <img src="assets/15Artboard 8xxxhdpi.png" alt="" height="60px" class="logo hidden md:block min-w-min" />
+                <img src="assets/white_logo.png" alt="" height="60px" class="logo md:hidden" />
+            </div>
+            <div class="nav__menu__btn block lg:hidden" id="menu-btn">
+                <i class="ri-menu-line text-black"></i>
+            </div>
+        </div>
+
+        <ul class="nav__links hidden lg:flex" id="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#blog">BLOG</a></li>
+            <li><a href="#download">DOWNLOAD</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+
+        <div class="nav__btns">
+            <button class="btn">DOWNLOAD APP</button>
+        </div>
+    </nav>
+
+    <!-- ===========Header============= -->
+
+
+    <div class="flex items-center justify-center pt-[80px] md:pt-0 px-1 md:px-0 min-h-[300px]">
+        <div class="flex flex-col-reverse md:flex-row rounded-xl md:p-0 border border-transparent md:border-gray-300 w-full max-w-[1400px] h-auto md:max-h-[40vh]">
+            <div
+                class=" max-w-full md:max-w-[100%] flex items-center justify-end rounded-xl overflow-hidden mt-8 md:mt-0">
+                <img alt="" class="w-full h-auto rounded-xl object-cover hidden md:block" src="assets/cover-first.png" />
+                <img alt="" class="w-full h-auto rounded-xl object-cover md:hidden" src="assets/cover-first.png" />
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section class="bg-blue-50 py-16 px-6">
+        <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl p-8 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Contact Info -->
+            <div class="space-y-8">
+                <h2 class="text-3xl font-bold text-blue-900">
+                    যোগাযোগ করুন <br /> EduRLab এর সাথে
+                </h2>
+                <p class="text-gray-700">
+                    যেকোনো সাহায্য বা প্রশ্নের জন্য নিচের তথ্য থেকে যোগাযোগ করুন অথবা বার্তা পাঠান।
+                </p>
+
+                <!-- Details -->
+                <div class="space-y-6 text-gray-700">
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-blue-100 text-blue-700 rounded-lg shadow-md">
+                            <i class="fas fa-map-marker-alt fa-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-900">ঠিকানা</h4>
+                            রাজবাড়ী সদর, বাংলাদেশ
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-green-100 text-green-700 rounded-lg shadow-md">
+                            <i class="fas fa-phone fa-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-900">ফোন</h4>
+                            <a href="tel:01805123649" class="hover:underline text-green-700">01805-123649</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <div class="p-3 bg-purple-100 text-purple-700 rounded-lg shadow-md">
+                            <i class="fas fa-envelope fa-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-900">ইমেইল</h4>
+                            <a href="mailto:contact@edurlab.com"
+                                class="hover:underline text-purple-700">contact@edurlab.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="flex space-x-6 mt-8 flex-wrap md:flex-nowrap">
+                    <a href="https://facebook.com/edurlab" target="_blank" rel="noopener" aria-label="Facebook"
+                        class="w-10 h-10 flex items-center justify-center bg-blue-700 text-white rounded-full shadow hover:bg-blue-800 hover:scale-110 transition-transform">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/edurlab" target="_blank" rel="noopener" aria-label="Twitter"
+                        class="w-10 h-10 flex items-center justify-center bg-sky-500 text-white rounded-full shadow hover:bg-sky-600 hover:scale-110 transition-transform">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="https://instagram.com/edurlab" target="_blank" rel="noopener" aria-label="Instagram"
+                        class="w-10 h-10 flex items-center justify-center bg-pink-500 text-white rounded-full shadow hover:bg-pink-600 hover:scale-110 transition-transform">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://youtube.com/edurlab" target="_blank" rel="noopener" aria-label="YouTube"
+                        class="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full shadow hover:bg-red-700 hover:scale-110 transition-transform">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="space-y-6" novalidate>
+                <input type="text" placeholder="আপনার নাম" required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+                <input type="email" placeholder="আপনার ইমেইল" required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition" />
+                <textarea rows="4" placeholder="আপনার বার্তা লিখুন..." required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition resize-none"></textarea>
+                <button type="submit"
+                    class="w-full py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-lg shadow hover:from-blue-700 hover:to-blue-800 transition">
+                    বার্তা পাঠান
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="max-w-7xl mx-auto  rounded-3xl overflow-hidden shadow-lg border border-blue-200 h-[500px]">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.712844779873!2d89.6448584149943!3d23.757180384584507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe898d63c190d3%3A0xaaa657d3dc2b2495!2sRajbari%20District!5e0!3m2!1sen!2sbd!4v1718898000000"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="contact">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <img src="assets/15Artboard 8xxxhdpi.png" alt="" height="50px" style="width: 220px" />
+                </div>
+                <p>
+                    "EduRLab" is an educational technology company working to digitally
+                    transform the country's education system through modern and
+                    easy-to-use software solutions.........
+                </p>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-youtube-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Company</h4>
+                <ul class="footer__links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-phone-fill"></i></span> 01805123649
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-record-mail-line"></i></span>
+                            contact.edurlab@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-map-pin-2-fill"></i></span> Aladipur Bazar
+                            Market 2nd floor ,Rajbari 7700
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Subscribe</h4>
+                <form action="/">
+                    <input type="text" placeholder="Enter your email" />
+                    <button class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 Web Design EduRLab. All rights reserved. Develop By
+            Company Owner ( Easin + Raja )
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
